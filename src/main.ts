@@ -11,4 +11,4 @@ app.innerHTML = `
 // Initialize WebAssembly functionality.
 init().then((exports) => {
   console.log(exports.add(4, 1));
-})
+});

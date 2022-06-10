@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && mv dist docs",
+    "build": "rm -r -f docs && tsc && vite build && mv dist docs",
     "preview": "vite preview",
     "format": "npx prettier --write .",
     "wasm": "cd audio-analyzer-lib && wasm-pack build --target web"

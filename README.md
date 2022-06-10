@@ -1,4 +1,5 @@
 # How to run the application.
+
 The website is hosted using GitHub Pages: \
 https://startbit96.github.io/audio-analyzer/
 
