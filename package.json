@@ -1,0 +1,20 @@
+{
+  "name": "meduse-wasm",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "npx prettier --write .",
+    "wasm": "cd audio-analyzer-lib && wasm-pack build --target web"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "prettier": "2.6.2",
+    "tailwindcss": "^3.1.2",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
+  }
+}
