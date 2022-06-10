@@ -1,4 +1,8 @@
 # How to run the application.
+The website is hosted using GitHub Pages: \
+https://startbit96.github.io/audio-analyzer/
+
+# How to run the application locally.
 
 1. Clone the repository. \
    `git clone git@github.com:startbit96/audio-analyzer.git`
