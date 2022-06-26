@@ -10,5 +10,10 @@ app.innerHTML = `
 
 // Initialize WebAssembly functionality.
 init().then((exports) => {
-  console.log(exports.add(4, 1));
+  const myValues = new Int32Array([1,2,3]);
+  const wasmMemoryArray = new Int32Array(exports.memory.buffer);
+  const inputPointer = exports.get_input_buffer_pointer();
+  const valueByteSize = exports.get_buffer_value_byte_size();
+  wasmMemoryArray.set(myValues, inputPointer / valueByteSize);
+  console.log(exports.get_sum());
 });

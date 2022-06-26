@@ -1,5 +1,5 @@
 {
-  "name": "meduse-wasm",
+  "name": "audio-analyzer-wasm",
   "private": true,
   "version": "0.0.0",
   "scripts": {
